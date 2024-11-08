@@ -1,0 +1,27 @@
+.App {
+  position: relative;
+  border:  orangered solid 1px;
+}
+.App .component{
+  border: green solid 1px;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  height: calc(100vh - 70px);
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  position: fixed;
+  top: 70px;
+  overflow-y: auto;
+}
+.App .component div{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.App .component .box_component{
+  margin-top: 70px;
+  top: 0;
+}
