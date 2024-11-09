@@ -1,0 +1,67 @@
+/* src/LoveProposal.css */
+.love-proposal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: transparent;
+}
+.love-proposal-container .content {
+    display: flex;
+    flex-direction: column;
+}
+.love-proposal-container .hearts img{
+    z-index: -1;
+}
+
+.love-proposal-container .preg{
+    text-align: center;
+    font-weight: 900;
+    text-shadow: 0 0 10px #ff4d4d, 0 0  10px #ff4d4d, 0 0  10px #ff4d4d;
+}
+.love-proposal-container .fondo-video{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    filter: blur(4px);
+}
+.background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+.love-proposal-container .name{
+    position: absolute;
+    top: 10px;
+    font-weight: 900;
+    /* -webkit-text-stroke: .3px white; */
+    /* color: rgb(0, 0, 0); */
+    text-shadow: 0 0 10px #ff4d4d, 0 0 10px #ff4d4d, 0 0 10px #ff4d4d;
+}
+.love-proposal-container .btn{
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.yes-button {
+    margin: 10px;
+    margin-left: 100px;
+    transition: .3s ease;
+}
+.yes-button:hover{
+    box-shadow: 0 0 5px pink;
+}
+
+.love-proposal-container .yes-button, .no-button {
+    width: 100px;
+}

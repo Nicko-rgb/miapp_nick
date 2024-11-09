@@ -1,0 +1,213 @@
+.modals{
+    position: absolute;
+    z-index: 10;
+    background-color: #323232c3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modals .hearts .heart{
+    z-index: 1;
+}
+
+
+
+.modals .modal-content{
+    box-shadow: 0 0 10px rgb(237, 109, 188), 0 0 10px rgb(237, 109, 188);
+    max-width: 500px;
+    width: 100%;
+    background: white;
+    color: black;
+    padding: 20px;
+    padding-top: 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.modals h2{
+    text-align: center;
+}
+.gift-item {
+    position: relative; /* Para posicionar el punto nuevo */
+}
+
+.new-message-dot {
+    position: absolute;
+    top: -5px; /* Ajusta según sea necesario */
+    right: -5px; /* Ajusta según sea necesario */
+    width: 10px;
+    height: 10px;
+    background-color: rgb(237, 109, 188); /* Color del punto */
+    border-radius: 50%; /* Hacerlo redondo */
+}
+.modals .box-regalos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.modals .box-regalos img{
+    width: 80px;
+    cursor: pointer;
+    padding: 7px;
+}
+.modals .box-regalos .bouncing-gift {
+    transition: transform 0.4s ease; 
+    animation: bounce 2s infinite; /* Aplicar animación de rebote */
+}
+
+
+.modals .box-regalos img:hover {
+    filter: drop-shadow(0 0 15px rgb(237, 109, 188));
+    transform: scale(1.05);
+    background-color: pink;
+}
+
+
+/* Animación bounce */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    
+    40% {
+        transform: translateY(-15px); /* Rebote hacia arriba */
+    }
+    
+    60% {
+        transform: translateY(-7px); /* Rebote hacia abajo */
+    }
+}
+.modals .no-bounce {
+    animation: none; /* Detener la animación */
+}
+
+
+.modals .box-messages {
+    position: absolute;
+    background-color: rgb(255, 208, 228);
+    box-shadow: 0 0 10px #ff2ca4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    animation: fadeIn 0.3s ease;
+    max-width: 450px;
+    min-height: 490px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px) scale(0.4);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+.modals .box-messages .box{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.modals .box-messages .title-msg{
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'poppins';
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.modals .message4 img {
+    width: 80px;
+}
+.modals .box-messages .message-love{
+    text-align: justify;
+    font-size: 16px;
+    font-family: 'poppins';
+}
+.modals .box-messages button{
+    margin-top: 20px;
+    font-size: 15px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+.modals .box-messages .ico{
+    position: absolute;
+    color: red;
+}
+.modals .box-messages .ico-left {
+    left: 10px;
+    top: 10px;
+}
+.modals .box-messages .ico-right {
+    left: 425px;
+    top: 10px;
+}
+.modals .box-messages .ico.left1{
+    position: absolute;
+    left: -100px;
+    bottom: 100px;
+}
+.modals .box-messages .ico-right1 {
+    right: 10px;
+    bottom: 10px;
+}
+.modals button{
+    background-color: #ff4d4d;
+    font-family: 'poppins';
+    font-weight: 600;
+    color: white;
+    border: none;
+    padding: 7px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #ff4d4d, 0 0 4px #ff4d4d, 0 0 4px #ff4d4d;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.modal-content .ico{
+    position: absolute;
+    font-size: 30px;
+}
+.modal-content .ico-left{
+    left: 10px;
+    top: 10px;
+}
+.modal-content .ico-right{
+    right: 10px;
+    top: 10px;
+}
+.modal-content .ico-left1{
+    left: 10px;
+    bottom: 10px;
+}
+.modal-content .ico-right1{
+    right: 10px;
+    bottom: 10px;
+}

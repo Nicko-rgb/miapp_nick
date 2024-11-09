@@ -1,13 +1,19 @@
 import './App.css'
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Inicio from './Components/Inicio/Inicio';
+import Load from './Components/Anim/Load';
 
 function App() {
     return (
-        <Router >
-            <h2>HELLO WORD</h2>     
-        </Router>
+        <div className='App'>
+            <BrowserRouter >
+                <Routes>
+                    <Route path="/" element={<Load />} />
+                    <Route path="/love" element={<Inicio />} />
+                </Routes>
+            </BrowserRouter>
+        </div>
     );
 }
 
