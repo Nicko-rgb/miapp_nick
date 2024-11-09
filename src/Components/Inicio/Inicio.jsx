@@ -52,7 +52,7 @@ const LoveProposal = () => {
             {modalFlower && (
                 <Flores openMessage={handleMessage} />
             )}
-            {!modalIsOpen && (
+            {modalIsOpen && (
                 <Message closeModal={handleMessage} />
             )}
         </div>
